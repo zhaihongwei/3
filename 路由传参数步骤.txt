@@ -1,0 +1,11 @@
+1 在路由配置中设置
+                .when('/detail/:id', {
+			templateUrl: 'page/detail.html',
+			controller:'detailCtrl'
+		})
+2.在页面中跳转路由并传递参数
+		 语法：路由规则/传递的值   
+                 举例：<a href="#/detail/{{dish.did}}" />
+3在跳转到的页面中的controller中 
+                使用$routeParams.id 获得传递进来的值
+                   
